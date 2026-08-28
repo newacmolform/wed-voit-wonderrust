@@ -1,0 +1,218 @@
+ 
+/* Убираем стандартные отступы */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Основной фон сайта */
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Шапка */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #181818;
+    height: 200px;
+}
+
+
+/* Название сайта */
+.logo {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+/* Подзаголовок */
+.subtitle {
+    color: #aaa;
+}
+
+
+/* Основной контейнер */
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+/* Заголовок */
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Контейнер карточек */
+.maps {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Карточка карты */
+.map-card {
+    width: 300px;
+    padding: 20px;
+    background: #1d1d1d;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Место под изображение */
+.map-image {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2a2a2a, #181818);
+    border-radius: 14px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+.map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+    cursor: zoom-in;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.map-image:hover .map-img {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+.image-preview {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: min(82vw, 900px);
+    max-height: 85vh;
+    padding: 14px;
+    background: rgba(18, 18, 18, 0.96);
+    border: 2px solid rgba(232, 93, 4, 0.9);
+    border-radius: 18px;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    z-index: 30;
+    backdrop-filter: blur(8px);
+}
+
+.image-preview img {
+    display: block;
+    width: 100%;
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #0f0f0f;
+}
+
+.map-image:hover .image-preview,
+.map-image:focus-within .image-preview {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.map-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.map-name-container {
+    margin: auto;
+    height: 40px;
+    background: #00bbc2;
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-bottom: 10px;  
+    font-size: 16px;    
+    padding: 9px 0;  
+}
+
+/* Название карты */
+.map-name {
+    font-size: 20px;
+    margin: 0;  
+    
+
+}
+
+
+/* Описание */
+.map-info {
+    color: #999;
+    margin-bottom: 15px;
+}
+
+
+/* Голоса */
+.votes {
+    margin-bottom: 15px;
+}
+
+
+/* Кнопка */
+.vote-button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #e85d04;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Наведение на кнопку */
+.vote-button:hover {
+    background: #ff7200;
+}
+
+
+/* Сообщение после голосования */
+.message {
+    text-align: center;
+    margin-top: 30px;
+    color: #e85d04;
+}
+
+
+/* Подвал */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+.hreff {
+    text-decoration: none;
+    color: #e85d04;
+}

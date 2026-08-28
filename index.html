@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- телефон-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wonder Rust: Map Voit</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <h1 class="logo">Wonder Rust: Map Voit</h1>
+
+        <p class="subtitle">
+            Голосование за карту следующего вайпа
+        </p>
+    </header>
+
+
+    <!-- Основная часть сайта -->
+    <main class="main">
+
+        <h2 class="title">Выбери карту</h2>
+
+        <!-- Все варианты карт -->
+        <section class="maps">
+
+            <!-- Карта №1   -->
+            <article class="map-card">
+
+                <!-- Сюда позже можно поставить картинку карты -->
+                <div class="map-image">
+                    <img class="map-img" src="img/Снимок экрана 2026-08-28 170121.png" alt="Карта 1">
+                    <div class="image-preview">
+                        <img src="img/Снимок экрана 2026-08-28 170121.png" alt="Предпросмотр карты 1">
+                    </div>
+                </div>
+                <div class="map-name-container">
+                    <p class="map-name">
+                        <a class="map-link" href="https://rustmaps.com/map/4050_237289752">Ссылка на RustMaps</a>
+                    </p>
+                </div>
+
+                <p class="map-info">
+                    Size:4050
+                </p>
+
+                <!-- Количество голосов -->
+                <p class="votes">
+                    Голосов: <span id="votes-map-1">0</span>
+                </p>
+
+                <!-- Кнопка голосования -->
+                <button
+                    class="vote-button"
+                    id="vote-map-1"
+                    onclick="vote('map-1')">
+                    Проголосовать
+                </button>
+
+            </article>
+
+
+            <!-- Карта №2 -->
+            <article class="map-card">
+
+                <div class="map-image">
+                    <img class="map-img" src="img/мапа2.png" alt="Карта 2">
+                    <div class="image-preview">
+                        <img src="img/мапа2.png" alt="Предпросмотр карты 2">
+                    </div>
+                </div>
+                <div class="map-name-container">
+                    <p class="map-name">
+                        <a class="map-link" href="https://rustmaps.com/map/4050_1857567180">Ссылка на RustMaps</a>
+                    </p>
+                </div>
+
+                <p class="map-info">
+                    Size: 4050
+                </p>
+
+                <p class="votes">
+                    Голосов: <span id="votes-map-2">0</span>
+                </p>
+
+                <button
+                    class="vote-button"
+                    id="vote-map-2"
+                    onclick="vote('map-2')">
+                    Проголосовать
+                </button>
+
+            </article>
+
+
+            <!-- Карта №3 -->
+            <article class="map-card">
+
+                <div class="map-image">
+                    <img class="map-img" src="img/Снимок экрана 2026-08-28 172122.png" alt="Карта 3">
+                    <div class="image-preview">
+                        <img src="img/Снимок экрана 2026-08-28 172122.png" alt="Предпросмотр карты 3">
+                    </div>
+                </div>
+
+                <div class="map-name-container">
+                    <p class="map-name">
+                        <a class="map-link" href="https://rustmaps.com/map/4000_1348997197">Ссылка на RustMaps</a>
+                    </p>
+                </div>
+
+                <p class="map-info">
+                    Size:4000
+                </p>
+
+                <p class="votes">
+                    Голосов: <span id="votes-map-3">0</span>
+                </p>
+
+                <button
+                    class="vote-button"
+                    id="vote-map-3"
+                    onclick="vote('map-3')">
+                    Проголосовать
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <!-- Здесь будет сообщение после голосования -->
+        <p class="message" id="message"></p>
+
+    </main>
+
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>Wonder RustMap: Wipe Voit © 2026</p>
+        <p>связь с нами ниже</p>
+        <p >Discord: <a class="hreff" href="https://discord.gg/7XFeEKwKEf">ссылка</a></p>
+        <p>Server.connnect: 212.22.93.76.28014</p>
+    </footer>
+
+
+    <!-- Подключаем JavaScript -->
+    <script src="main.js"></script>
+
+</body>
+</html>
+```
